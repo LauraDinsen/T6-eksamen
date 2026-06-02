@@ -1,0 +1,130 @@
+/* button */
+
+button {
+  font-family: "Times New Roman", Times, serif;
+}
+/* Nav Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 130px;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #efcc8f;
+
+  padding: 80px 120px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  font-weight: normal;
+
+  margin-bottom: 40px;
+}
+
+.hero button {
+  padding: 18px 40px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* img */
+
+.lau25 {
+  width: 320px;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 40px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lau25 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Om projekt */
+
+.projekt {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 120px;
+  gap: 80px;
+}
+
+.projekt-text {
+  max-width: 500px;
+}
+
+.projekt-text h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.projekt-text p {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Body */
+body {
+  background-color: #fff3d6;
+}
+
+/* Footer */
+.footer {
+  background: #fce9bf;
+  padding: 60px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+}
+
+.footer p,
+.footer a {
+  display: block;
+  font-size: 16px;
+  line-height: 1, 2px;
+}
+
+/* Mobil */
