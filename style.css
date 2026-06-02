@@ -1,33 +1,64 @@
 /* button */
-
 button {
   font-family: "Times New Roman", Times, serif;
-}
-/* Nav Menu */
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  text-decoration: none;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #efcc8f;
+}
+
+/* Nav */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 130px;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+/* Body */
+body {
+  background-color: #fff3d6;
+}
+
+/* img */
+img {
+  max-width: 100%;
+}
+
+.lau25 {
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 40px;
 }
 
 /* Hero */
-
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  flex-direction: column;
   background-color: #efcc8f;
-
-  padding: 80px 120px;
+  padding: 80px 30px;
+  gap: 40px;
 }
 
 .hero-text h1 {
@@ -38,58 +69,33 @@ nav {
 .hero-text h2 {
   font-size: 30px;
   font-weight: normal;
-
   margin-bottom: 40px;
 }
 
-.hero button {
-  padding: 18px 40px;
-
-  border: none;
-  border-radius: 20px;
-
-  background-color: white;
-
-  font-size: 20px;
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-/* img */
-
-.lau25 {
-  width: 320px;
-  height: 420px;
-
-  object-fit: cover;
-
-  border-radius: 40px;
-}
-
-img {
-  max-width: 100%;
-}
-
-.lau25 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.hero-image {
+  align-self: center;
 }
 
 /* Om projekt */
-
 .projekt {
   display: flex;
+  flex-direction: column;
+  padding: 30px;
 
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 120px;
-  gap: 80px;
+  & a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
-.projekt-text {
-  max-width: 500px;
+.projekt-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 40px;
+  display: block;
+  margin: 20px 0 20px 0;
 }
 
 .projekt-text h2 {
@@ -102,11 +108,6 @@ img {
   line-height: 1.6;
 }
 
-/* Body */
-body {
-  background-color: #fff3d6;
-}
-
 /* Footer */
 .footer {
   background: #fce9bf;
@@ -116,15 +117,37 @@ body {
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 45px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .footer p,
 .footer a {
   display: block;
   font-size: 16px;
-  line-height: 1, 2px;
 }
 
-/* Mobil */
+/* Desktop */
+@media screen and (min-width: 600px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .projekt {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    max-width: none;
+  }
+
+  .projekt-text {
+    flex: 1;
+  }
+
+  .projekt-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
