@@ -31,4 +31,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .t3img {
+    margin-left: 40px;
+    margin-right: -20px;
+  }
 }
