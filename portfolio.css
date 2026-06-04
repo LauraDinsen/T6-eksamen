@@ -1,5 +1,9 @@
 main {
   margin: 80px;
+
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -13,9 +17,54 @@ p {
   margin-bottom: 20px;
 }
 
+.portfolioafsnit {
+  & a {
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 10px 20px 10px;
+    /* margin: 67px 14px 20px 180px; */
+  }
+}
+
 article {
   background-color: rgb(243, 206, 158);
   border-radius: 40px;
   padding: 25px;
   margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 600px) {
+  .portfolioafsnit a {
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 10px 20px 10px;
+    /* margin: 67px 14px 20px 180px; */
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+  }
 }
