@@ -10,8 +10,8 @@ h1 {
 }
 
 .t2img {
-  margin-right: 90px;
-  border-radius: 40px;
+  margin-left: 90px;
+  border-radius: 20px;
 }
 
 p {
@@ -30,5 +30,9 @@ p {
   #t2top {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .t3img {
+    margin-left: 40px;
+    margin-right: -20px;
   }
 }
