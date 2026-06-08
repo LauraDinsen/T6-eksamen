@@ -27,6 +27,7 @@
   h2 {
     font-size: 25px;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
 
   .grid-section {
@@ -40,6 +41,7 @@
     font-size: 19px;
     line-height: 1.6;
     margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   .image img {
