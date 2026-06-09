@@ -46,6 +46,7 @@ p {
   cursor: pointer;
   margin-bottom: 20px;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 hr {
@@ -162,7 +163,7 @@ img {
 }
 
 .projekt-text h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 

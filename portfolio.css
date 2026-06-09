@@ -17,6 +17,10 @@ p {
   margin-bottom: 20px;
 }
 
+.text3 {
+  text-align: left;
+}
+
 /* .portfolioafsnit {
   & a {
     text-decoration: none;
